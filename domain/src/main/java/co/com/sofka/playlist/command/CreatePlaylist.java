@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class CreatePlaylist extends Command {
 
-    private final ClienteId;
+    private final ClienteId clienteId;
     private final PlaylistName playlistName;
     private final SongId song;
 
@@ -16,13 +16,13 @@ public class CreatePlaylist extends Command {
         this.playlistName = playlistName;
         this.song = song1;
     }
-
-
     public PlaylistName getPlaylistName(){
         return playlistName;
     }
-
-    public  SongId getSong(){
+    public SongId getSong(){
         return song;
+    }
+    public ClienteId getClienteId() {
+        return clienteId;
     }
 }

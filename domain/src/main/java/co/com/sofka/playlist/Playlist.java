@@ -8,13 +8,13 @@ import co.com.sofka.playlist.events.SongAsociated;
 import co.com.sofka.playlist.values.PlaylistId;
 import co.com.sofka.playlist.values.PlaylistName;
 import co.com.sofka.playlist.values.SongId;
+import co.com.sofka.playlist.values.CuentaId;
 
 import java.util.Set;
 
 public class Playlist extends AggregateEvent<PlaylistId> {
 
     public PlaylistName playlistName;
-
     public Set<Song> song;
 
     private Playlist(PlaylistId playlistId){
@@ -39,5 +39,8 @@ public class Playlist extends AggregateEvent<PlaylistId> {
 
     public void cambiarNombre(PlaylistName playlistName){
         appendChange(new NameChanged(playlistName)).apply();
+    }
+    public void cuentaAsosciada(CuentaId cuentaId){
+        appenChange(new AccountAsociate(cuentaId)).apply();
     }
 }
