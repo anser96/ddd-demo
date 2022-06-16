@@ -23,8 +23,9 @@ public class SongFactory {
         return instance;
     }
 
-    public SongFactory add(SongId entityId, SongName name, SongArtist artist, SongDate date, SongGender genero){
-        songs.add(new Song(entityId, name, artist, date,genero));
+    public SongFactory add(SongId entityId, SongName name, SongArtist artist, SongDate date,
+                           SongDuration duration,SongAlbum album,SongGenre genero,SongComposer composer ){
+        songs.add(new Song(entityId, name, artist, date,duration,album,genero,composer));
         return this;
     }
 
