@@ -1,6 +1,5 @@
 package co.com.sofka.playlist;
 
-import co.com.sofka.playlist.Song;
 import co.com.sofka.playlist.values.*;
 
 import java.util.HashSet;
