@@ -8,11 +8,11 @@ import java.util.Set;
 
 public class CreatePlaylist extends Command {
 
+    private final ClienteId;
     private final PlaylistName playlistName;
-
     private final SongId song;
 
-    public CreatePlaylist(PlaylistName playlistName, SongId song1){
+    public CreatePlaylist(ClienteId clienteId, PlaylistName playlistName, SongId song){
         this.playlistName = playlistName;
         this.song = song1;
     }
