@@ -4,8 +4,6 @@ Bdomain/src/main/java/co/com/sofka/playlist/command/ChangeName.java,0\d\0dc6b31
 r
 Bdomain/src/main/java/co/com/sofka/playlist/events/NameChanged.java,5\0\502eeba0d70eb98904a5d6ac14adaec9317a0991
 q
-Adomain/src/main/java/co/com/sofka/playlist/values/PlaylistId.java,0\f\0fe273ee9dd0fc5785c96af68458a31a9790b93c
-q
 Adomain/src/main/java/co/com/sofka/playlist/values/SongArtist.java,a\6\a6548eb32d69efe93101ba72185686497d616e06
 t
 Ddomain/src/main/java/co/com/sofka/playlist/events/SongAsociated.java,b\1\b175e5f1afbbd5444309177c178fe6ee0f14165a
