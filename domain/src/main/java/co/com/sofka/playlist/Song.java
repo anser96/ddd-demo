@@ -1,11 +1,11 @@
 package co.com.sofka.playlist;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.playlist.values.SongArtist;
-import co.com.sofka.playlist.values.SongDate;
-import co.com.sofka.playlist.values.SongName;
+import co.com.sofka.playlist.values.*;
 
-public class Song extends Entity<SongName> {
+public class Song extends Entity<SongId> {
+    protected SongName songName;
+
     protected SongArtist songArtist;
     protected SongDate songDate;
     protected SongDuration songDuration;
@@ -13,10 +13,11 @@ public class Song extends Entity<SongName> {
     protected SongGenre songGenre;
     protected SongComposer songComposer;
 
-    public Song(SongName songName, SongArtist songArtist, SongDate songDate, SongDuration songDuration,
+    public Song(SongId songId,SongName songName, SongArtist songArtist, SongDate songDate, SongDuration songDuration,
                 SongAlbum songAlbum, SongGenre songGenre, SongComposer songComposer){
 
-        super(songName);
+        super(songId);
+        this.songName = songName;
         this.songArtist = songArtist;
         this.songDate = songDate;
         this.songDuration = songDuration;
@@ -38,3 +39,5 @@ public class Song extends Entity<SongName> {
     public SongAlbum SongAlbum() { return songAlbum; }
     public SongGenre getSongGenre() { return songGenre; }
     public SongComposer getSongComposer() { return songComposer; }
+
+}
