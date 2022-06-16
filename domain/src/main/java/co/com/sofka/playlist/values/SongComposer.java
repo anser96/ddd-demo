@@ -4,10 +4,10 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class SongGender implements ValueObject<String>{
+public class SongComposer implements ValueObject<String>{
     private final String value;
 
-    public SongGender(String value){
+    public SongComposer(String value){
         this.value = Objects.requireNonNull(value);
 
     }

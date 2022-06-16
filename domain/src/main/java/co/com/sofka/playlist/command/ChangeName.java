@@ -15,9 +15,7 @@ public class ChangeName extends Command {
         this.playlistName =playlistName;
     }
 
-    public PlaylistName getPlaylistName(){
-        return playlistName;
-    }
+    public PlaylistName getPlaylistName(){ return playlistName; }
 
     public PlaylistId getPlaylistId(){
         return playlistId;

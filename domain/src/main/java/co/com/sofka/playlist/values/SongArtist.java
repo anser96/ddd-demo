@@ -1,4 +1,18 @@
 package co.com.sofka.playlist.values;
 
-public class SongArtist {
+import co.com.sofka.domain.generic.ValueObject;
+
+import java.util.Objects;
+
+public class SongArtist implements ValueObject<String>{
+    private final String value;
+
+    public SongGender(String value){
+        this.value = Objects.requireNonNull(value);
+    }
+
+    public String value() {
+        return value;
+    }
+
 }
