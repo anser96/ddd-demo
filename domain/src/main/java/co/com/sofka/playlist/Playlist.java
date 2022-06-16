@@ -15,7 +15,7 @@ public class Playlist extends AggregateEvent<PlaylistId> {
 
     public PlaylistName playlistName;
 
-    public SongId song;
+    public Set<Song> song;
 
     private Playlist(PlaylistId playlistId){
         super(playlistId);
@@ -28,8 +28,13 @@ public class Playlist extends AggregateEvent<PlaylistId> {
         appendChange(new PlaylistCreated(playlistName,song)).apply();
     }
 
-    public void addSong(SongId songId){
-        appendChange(new SongAsociated(songId)).apply();
+    public void addSong(SongFactory songFactory){
+        songFactory.songs()
+                .forEach(lesson ->
+                        appendChange(
+                                new LessonAdded(lesson.identity(),  lesson.content(), lesson.category(), lesson.lessonType())
+                        ).apply()
+                );
     }
 
     public void cambiarNombre(PlaylistName playlistName){
