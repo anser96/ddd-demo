@@ -1,22 +1,23 @@
 package co.com.sofka.playlist;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.playlist.values.SongArtist;
-import co.com.sofka.playlist.values.SongDate;
-import co.com.sofka.playlist.values.SongName;
+import co.com.sofka.playlist.values.*;
 
-public class Song extends Entity<SongName> {
+public class Song extends Entity<SongId> {
     protected SongArtist songArtist;
 
     protected SongDate songDate;
 
+    protected SongGender gender;
 
 
-    public Song(SongName songName, SongArtist songArtist, SongDate songDate){
-        super(songName);
+    public Song(SongId songId,SongName songName, SongArtist songArtist, SongDate songDate, SongGender gender){
+        super(songId);
         this.songArtist = songArtist;
         this.songDate = songDate;
+        this.gender = gender;
     }
+
 
     public void ChangeArtist(SongArtist songArtist){
         this.songArtist = songArtist;

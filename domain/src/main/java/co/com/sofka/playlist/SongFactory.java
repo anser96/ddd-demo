@@ -1,3 +1,12 @@
+package co.com.sofka.playlist;
+
+import co.com.sofka.playlist.Song;
+import co.com.sofka.playlist.values.*;
+
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
 public class SongFactory {
     private final Set<Song> songs;
     private static SongFactory instance;
@@ -14,8 +23,8 @@ public class SongFactory {
         return instance;
     }
 
-    public SongFactory add(SongId entityId, SongName name, SongArtist artist, SongGender genero){
-        lessons.add(new Lesson(entityId, content, category, lessonType));
+    public SongFactory add(SongId entityId, SongName name, SongArtist artist, SongDate date, SongGender genero){
+        songs.add(new Song(entityId, name, artist, date,genero));
         return this;
     }
 

@@ -13,8 +13,6 @@ n
 >domain/src/main/java/co/com/sofka/playlist/PlaylistChange.java,5\5\55d7bfcb32fb0cb7562306a7529ba678561033dc
 t
 Ddomain/src/main/java/co/com/sofka/playlist/command/AgregateSong.java,c\c\cce8157658403ddfafac6bc0f4ab5cd2dd2593fa
-d
-4domain/src/main/java/co/com/sofka/playlist/Song.java,6\b\6b7d5de5a7048572651b61af2cd300a24abb5b2f
 v
 Fdomain/src/main/java/co/com/sofka/playlist/events/PlaylistCreated.java,8\1\81fc1528f12f6365484bbc34e90c68d706feb528
 :
