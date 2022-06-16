@@ -13,10 +13,6 @@ public class PlaylistChange extends EventChange {
             playlist.playlistName = event.getPlaylistName();
         });
 
-        apply((SongAsociated event) ->{
-            playlist.song = (SongId) event.getSongId();
-        });
-
         apply((NameChanged event)->{
             playlist.playlistName = event.getPlaylistName();
         });
