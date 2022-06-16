@@ -1,6 +1,4 @@
 
-r
-Bdomain/src/main/java/co/com/sofka/playlist/events/NameChanged.java,5\0\502eeba0d70eb98904a5d6ac14adaec9317a0991
 q
 Adomain/src/main/java/co/com/sofka/playlist/values/SongArtist.java,a\6\a6548eb32d69efe93101ba72185686497d616e06
 o
